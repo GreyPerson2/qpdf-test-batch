@@ -7,7 +7,7 @@ for file_name in ./*.pdf; do
   qpdf \
     --decrypt \
     --remove-restrictions \
-    --password="$PASSPHRASE1" \
+    --password="$PASSPHRASE" \
     --replace-input $file_name \
 
   echo "Done! Output: $file_name"
