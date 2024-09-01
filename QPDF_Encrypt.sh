@@ -1,7 +1,8 @@
 #!/bin/bash
 read -rsp "Enter passphrase: " PASSPHRASE1
-
+echo
 read -rsp "Enter passphrase: " PASSPHRASE2
+echo
 
 for file_name in ./*.pdf; do
   echo "Encrypting $file_name"
